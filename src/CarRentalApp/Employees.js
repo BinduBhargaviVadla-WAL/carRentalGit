@@ -4,7 +4,7 @@ import axios from "axios";
 export default function Employees() {
     const [employees, setEmployees] = useState([]);
     useEffect(() => {
-        axios.get("/employee.json").then((res) => {
+        axios.get("/employees.json").then((res) => {
             setEmployees(res.data);
 
         });

@@ -4,7 +4,7 @@ import { useTable } from 'react-table'
 import { useState, useEffect } from 'react';
  
  function Employee() {
-    const employees = require('./employee.json')
+    const employees = require('./employees.json')
     console.log(employees);
    const data = React.useMemo(
      () => employees,
